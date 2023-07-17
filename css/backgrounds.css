@@ -1,0 +1,11 @@
+.home-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .7)), url("C:\Users\jamdo\Documents\GitHub\Newdaynewway\static\images\home.jpg");
+}
+
+.about-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .7)), url("../img/about.jpg");
+}
+
+.contact-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .7)), url("../img/cs.jpg");
+}
