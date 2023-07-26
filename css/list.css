@@ -10,13 +10,11 @@ li::after{
 	font-weight: 700;
 }
 
-/* "Hold on, add a comma along with an 'and' after the second last list item." */
 li:nth-last-of-type(2)::after{
 	content: var(--separator) " " var(--connector) " ";
 	color: #0058ff;
 }
 
-/* "Hang on, only add an 'and' after the second last list item if it's the first list item as well." */
 li:first-of-type:nth-last-of-type(2)::after{
 	content: " " var(--connector);
 	color: #178717;
@@ -55,12 +53,10 @@ body{
 	background-color: transparent;
 }
 
-/* keep the <main> thing the <main> thing */
-
 h1, h2{
 	padding: 0;
 	margin: 0;
-	margin-top: -0.3ch; /* wanna get rid of those annoying margin */
+	margin-top: -0.3ch; 
 	font-weight: 700;
 	color: var(--accent);
 }
@@ -70,7 +66,7 @@ h2{
 }
 
 h1::before, h2::before{
-	content: "#"; /* some icing, I suppose */
+	content: "#"; 
 	color: var(--text-secondary);
 	font-size: 0.8em;
 }
