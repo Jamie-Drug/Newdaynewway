@@ -49,6 +49,25 @@
     </div>
 </nav>
 
+<script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle icon between bars and X
+        const icon = menuButton.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
+</script>
+
     <!-- Hero -->
     <section class="bg-emerald-800 text-white py-20">
         <div class="max-w-7xl mx-auto px-6 text-center">

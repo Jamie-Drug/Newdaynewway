@@ -29,7 +29,7 @@
 </head>
 <body class="bg-emerald-50 text-emerald-950">
 
-    <!-- Navbar with Mobile Menu -->
+<!-- Navbar with Mobile Menu -->
 <nav class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5">
         <div class="flex justify-between items-center">
@@ -68,6 +68,25 @@
         </div>
     </div>
 </nav>
+
+<script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle icon between bars and X
+        const icon = menuButton.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
+</script>
 
     <div class="max-w-7xl mx-auto px-6 py-20">
         <div class="grid md:grid-cols-2 gap-16">
