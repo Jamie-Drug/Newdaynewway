@@ -1,208 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="Jamie" content="" />
-  <link rel="stylesheet" href="./static/styles/styles.css">
-  <link rel="stylesheet" href="./static/styles/backgrounds.css">
-  <link rel="stylesheet" href="./static/vendor/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-    rel="stylesheet" type="text/css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <!-- Custom styles for this template -->
-  <link href="css\carousel.css" rel="stylesheet">
-  <title>About NewDayNewWay</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - New Day New Way</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body class="bg-emerald-50 text-emerald-950">
 
-<body>
-  <style>
-    h1 {
-      text-align: center;
-    }
-
-    div {
-      text-align: center;
-    }
-  </style>
-  <header>
-    <!--nav bar stuff-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">NewDayNewWay</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="whatwedo.html">What We Do</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="animal.html">Meet The Animals</a>
-            </li>
-
-        </ul>
-      </div>
+    <!-- Navbar -->
+    <nav class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <i class="fa-solid fa-leaf text-3xl text-emerald-600"></i>
+                <span class="text-2xl font-bold">New Day New Way</span>
+            </a>
+            <div class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="index.html" class="hover:text-emerald-600">Home</a>
+                <a href="about.html" class="hover:text-emerald-600">About</a>
+                <a href="whatwedo.html" class="hover:text-emerald-600">What We Do</a>
+                <a href="animal.html" class="hover:text-emerald-600">Animals</a>
+                <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main role="main">
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">About Us!</h1>
-        <p>Hello, I'm Louise and I've been a foster carer for the local authority since 2005, caring for some of the
-          counties most traumatised and challenging young people. Through working with teens, I realised there was a
-          need for a one to one therapeutic alternative learning provision for those struggling to manage and thrive in
-          a mainstream school environment. Specifically those with challenging behaviour and who are at risk of
-          exclusion.
-        </p>
-      </div>
+    <!-- Hero -->
+    <section class="bg-emerald-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">About New Day New Way</h1>
+            <p class="text-xl max-w-2xl mx-auto">Therapeutic alternative learning through adventure, nature, and animal care in beautiful Norfolk.</p>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-8">Our Story</h2>
+                <div class="prose prose-lg text-emerald-800 leading-relaxed space-y-6">
+                    <p>Hello, I'm <strong>Louise Dowle-Moore</strong>. I've been a foster carer since 2005, supporting some of Norfolk’s most vulnerable young people.</p>
+                    <p>I created New Day New Way to offer a <strong>one-to-one therapeutic alternative</strong> for those who struggle in mainstream education — especially those with challenging behaviour or at risk of exclusion.</p>
+                    <p>Through outdoor adventures and hands-on animal care, we help young people re-engage with learning in a calm, safe, and exciting environment. They gain new skills and can work towards paddlesport certificates and the <strong>John Muir Award</strong>.</p>
+                </div>
+            </div>
+
+            <div class="bg-emerald-100 p-10 rounded-3xl">
+                <h3 class="text-3xl font-semibold mb-6">Who We Support</h3>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex gap-4"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Adventurous young people who love the outdoors</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Those who thrive with one-to-one support</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> Children who find mainstream school difficult</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="container">
-      <hr class="featurette-divider">
 
-      <!-- row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2></h2>
-          <p style="font-size:18px;">Through outdoor activities and adventures and real hands on animal care, I want to
-            help young people to re
-            engage in an alternative style of education, one that will provide a calm and safe space for them to
-            explore. </p>
+
+<!-- Adventures Section -->
+    <div class="bg-emerald-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Adventures</h2>
+            
+            <div class="grid md:grid-cols-3 gap-x-10 gap-y-12">
+                <!-- Paddle / Kayak -->
+                <div class="text-center">
+                    <img src="static/img/oard2.jpg" alt="Kayaking" 
+                         class="w-48 h-48 mx-auto rounded-full object-cover shadow-xl border-4 border-black">
+                    <p class="mt-6 font-medium px-4">Paddle board and kayak around Norfolk with a qualified Paddle sport instructor</p>
+                </div>
+
+                <!-- Hiking -->
+                <div class="text-center">
+                    <img src="static/img/walk1.jpg" alt="Hiking" 
+                         class="w-48 h-48 mx-auto rounded-full object-cover shadow-xl border-4 border-black">
+                    <p class="mt-6 font-medium px-4">Hike through the Norfolk countryside along some of the most beautiful trails</p>
+                </div>
+
+                <!-- High Ropes -->
+                <div class="text-center">
+                    <img src="static/img/hrope1.jpg" alt="High Ropes" 
+                         class="w-48 h-48 mx-auto rounded-full object-cover shadow-xl border-4 border-black">
+                    <p class="mt-6 font-medium px-4">Experience High Ropes at Thetford – Elevate Your Thrills amidst Nature’s Canopy!</p>
+                </div>
+
+                <!-- Segway - Centered on its own row -->
+                <div class="md:col-span-3 flex justify-center mt-8">
+                    <div class="text-center max-w-xs">
+                        <img src="static/img/seg1.jpg" alt="Segway Tour" 
+                             class="w-48 h-48 mx-auto rounded-full object-cover shadow-xl border-4 border-black">
+                        <p class="mt-6 font-medium px-4">Embark on an unforgettable journey with a segway tour through the forest</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h2></h2>
-          <p></p>
-        </div>
-        <div class="col-md-4">
-          <h2></h2>
-          <p style="font-size:18px;">Along the way they will get to learn some new skills and be awarded certificates in
-            paddlesports and work
-            towards getting a John Muir award for discovery and conservation.
-          </p>
-        </div>
-      </div>
-      <hr class="featurette-divider">
-
-
-
-
-
-
     </div>
-    <div class="container marketing">
-      <!-- Three columns of text-->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="static\img\oard2.jpg" alt="Generic placeholder image" width="140"
-            height="140">
-          <h2></h2>
-          <p style="font-size:20px;">Paddle board and kayak around Norfolk with a qualified Paddle sport instructor</p>
 
+    <!-- Safeguarding -->
+    <div class="max-w-7xl mx-auto px-6 py-8 bg-white border-t border-emerald-100">
+        <div class="flex items-center justify-center gap-4 text-emerald-700 hover:text-emerald-600 transition">
+            <i class="fa-solid fa-shield-halved text-xl"></i>
+            <a href="Safeguarding-policy 28.4.26.pdf" class="font-medium underline">
+                To see our Safeguarding Policy, click here to view
+            </a>
         </div>
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="static\img\walk1.jpg" alt="Generic placeholder image" width="140"
-            height="140">
-          <h2></h2>
-          <p style="font-size:20px;">Hike through the Norfolk countryside along some of the most beautiful trails</p>
-
-        </div>
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="static\img\hrope1.jpg" alt="Generic placeholder image" width="140"
-            height="140">
-          <h2></h2>
-          <p style="font-size:20px;">Experience High Ropes at Thetford: Elevate Your Thrills amidst Nature's Canopy!
-          </p>
-        </div>
-        <!--bottom row middle-->
-        <div class="row">
-          <div class="col-sm">
-            <img class="rounded-circle" src="static\img\seg1.jpg" alt="Generic placeholder image" width="140"
-              height="140">
-            <h2></h2>
-            <p style="font-size:20px;">Embark on an unforgettable journey with a segway tour through the forest</p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <hr class="featurette-divider">
-          <!--boxes of main page text with images to the sides-->
-
-          <hr class="featurette-divider">
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">Who are we aimed at? <span class="text-muted"></span></h2>
-              <p class="lead">New Day New Way would suit young people with an adventurous nature, who love being outside
-                and exploring the beauty of Norfolk and all it has to offer.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img class="featurette-image img-fluid mx-auto" src="static\img\donke1.jpg"
-                alt="Generic placeholder image">
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Interested? <span class="text-muted">Get in contact</span></h2>
-              <p class="lead">Head on over to our <a href="contact.html">contact page</a> and shoot us a message</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img class="featurette-image img-fluid mx-auto" src="static\img\[removal.ai]_tmp-647f5cf4905cf.png"
-                alt="Generic placeholder image">
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-
-
-        </div>
-
-
-        <!-- FOOTER -->
-        <footer class="container">
-          <p class="float-right"><a href="#">Back to top</a></p>
-        </footer>
-  </main>
-
+    </div>
 
 </body>
-
 </html>
