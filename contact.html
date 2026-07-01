@@ -29,23 +29,42 @@
 </head>
 <body class="bg-emerald-50 text-emerald-950">
 
-    <!-- Navbar -->
+    <!-- Navbar with Mobile Menu -->
 <nav class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-        
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-3">
-            <img src="static/img/logocrop.png" alt="New Day New Way Logo" class="h-10 w-auto">
-            <!-- Optional: Keep text next to logo -->
-            <span class="text-2xl font-bold">New Day New Way</span>
-        </a>
+    <div class="max-w-7xl mx-auto px-6 py-5">
+        <div class="flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="static/img/logocrop.png" alt="New Day New Way Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold hidden sm:block">New Day New Way</span>
+            </a>
 
-        <div class="hidden md:flex gap-8 text-lg font-medium">
-            <a href="index.html" class="hover:text-emerald-600">Home</a>
-            <a href="about.html" class="hover:text-emerald-600">About</a>
-            <a href="whatwedo.html" class="hover:text-emerald-600">What We Do</a>
-            <a href="animal.html" class="hover:text-emerald-600">Animals</a>
-            <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="index.html" class="hover:text-emerald-600">Home</a>
+                <a href="about.html" class="hover:text-emerald-600">About</a>
+                <a href="whatwedo.html" class="hover:text-emerald-600">What We Do</a>
+                <a href="animal.html" class="hover:text-emerald-600">Animals</a>
+                <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-button" 
+                    class="md:hidden text-3xl text-emerald-700">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 border-t">
+            <div class="flex flex-col gap-4 text-lg font-medium">
+                <a href="index.html" class="hover:text-emerald-600">Home</a>
+                <a href="about.html" class="hover:text-emerald-600">About</a>
+                <a href="whatwedo.html" class="hover:text-emerald-600">What We Do</a>
+                <a href="animal.html" class="hover:text-emerald-600">Animals</a>
+                <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+            </div>
         </div>
     </div>
 </nav>
